@@ -38,29 +38,29 @@ const ProjectsSection = () => {
 
     return (
         <section className="container mx-auto px-4 py-8">
-            <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <h2 className="text-2xl font-bold mb-6 font-geist-sans">Featured Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
                     <Link
                         href={project.link}
                         key={index}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block group"
+                        className="block group font-geist-sans"
                     >
-                        <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl">
-                            <div className={`h-48 ${project.bgColor} flex items-center justify-center group-hover:opacity-90 transition-opacity`}>
-                                <h3 className="text-xl font-bold px-4 text-center">{project.title}</h3>
+                        <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl h-full">
+                            <div className={`h-40 ${project.bgColor} flex items-center justify-center group-hover:opacity-90 transition-opacity`}>
+                                <h3 className="text-xl font-semibold px-4 text-center">{project.title}</h3>
                             </div>
-                            <div className="p-6">
-                                <p className="text-gray-600 dark:text-gray-300 mb-4 min-h-[100px]">
+                            <div className="p-4">
+                                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
                                     {project.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2">
                                     {project.technologies.map((tech, techIndex) => (
                                         <span
                                             key={techIndex}
-                                            className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium"
+                                            className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs font-medium"
                                         >
                                             {tech}
                                         </span>
