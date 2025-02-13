@@ -10,8 +10,8 @@ const ExperienceSection = () => {
       period: "Present",
       description: "Building UCaaS and CCaaS automations for SMBs and enterprises",
       highlights: [
-        "Created integrations for contact centers",
-        "Collaborated on custom routing configurations",
+        "Created custom integrations for contact centers",
+        "Collaborated on custom routing configurations for enterprise customers",
         "Improved customer experience through automation"
       ]
     },
@@ -22,6 +22,8 @@ const ExperienceSection = () => {
       description: "Development on risk of sepsis model for hospitals",
       highlights: [
         "Worked on healthcare analytics",
+        "Solved tier 4 tickets",
+        "Wrote MUMPS code to find hospital organizations affected by software bugs",
         "Developed risk prediction models",
         "Collaborated with healthcare providers"
       ]
