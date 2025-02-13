@@ -37,7 +37,7 @@ const ProjectsSection = () => {
     ];
 
     return (
-        <section className="container mx-auto px-4 py-8">
+        <section className="container mx-auto px-4 py-8 fade-in-section">
             <h2 className="text-2xl font-bold mb-6 font-geist-sans">Featured Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
@@ -48,7 +48,9 @@ const ProjectsSection = () => {
                         rel="noopener noreferrer"
                         className="block group font-geist-sans"
                     >
-                        <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl h-full">
+                        <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg 
+                             transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full
+                             hover:ring-2 hover:ring-blue-500 dark:hover:ring-blue-400">
                             <div className={`h-40 ${project.bgColor} flex items-center justify-center group-hover:opacity-90 transition-opacity`}>
                                 <h3 className="text-xl font-semibold px-4 text-center">{project.title}</h3>
                             </div>

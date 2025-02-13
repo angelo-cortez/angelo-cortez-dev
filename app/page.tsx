@@ -1,9 +1,12 @@
 import TypeWriter from './components/TypeWriter';
 import ProjectsSection from './components/ProjectsSection';
 import ExperienceSection from './components/ExperienceSection';
+import ScrollToTop from './components/ScrollToTop';
+
 export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <ScrollToTop />
       {/* Header Section */}
       <header className="container mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row items-center gap-8">
@@ -22,7 +25,7 @@ export default function Page() {
       </header>
 
       {/* About Section */}
-      <section className="container mx-auto px-4 py-8">
+      <section className="container mx-auto px-4 py-8 fade-in-section">
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p className="text-gray-600 dark:text-gray-400">
           Hey! I&apos;m Angelo Cortez, a software developer and AirBnB Superhost based in the SF Bay Area!
@@ -45,11 +48,13 @@ export default function Page() {
       <ExperienceSection />
 
       {/* Contact Section */}
-      <section className="container mx-auto px-4 py-8">
+      <section className="container mx-auto px-4 py-8 fade-in-section">
         <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
           <a href="https://github.com/angelotc"
-            className="px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:opacity-90 transition-opacity">
+            className="px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg 
+                     hover:opacity-90 transition-all duration-300 hover:scale-105 
+                     hover:shadow-lg hover:ring-2 hover:ring-gray-400 dark:hover:ring-gray-500">
             GitHub
           </a>
           <a href="https://linkedin.com/in/ajc0102"

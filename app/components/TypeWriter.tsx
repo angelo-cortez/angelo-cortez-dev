@@ -26,7 +26,9 @@ export default function TypeWriter({ text, delay = 100, className }: TypeWriterP
   return (
     <span className={className}>
       {currentText}
-      <span className="inline-block w-[2px] h-[1.2em] bg-gray-600 dark:bg-gray-400 ml-1 mt-3 animate-[blink_1s_infinite]" />
+      <span className="inline-block w-[2px] h-[1.2em] bg-gray-600 dark:bg-gray-400 ml-1 mt-3 
+                animate-[blink_1s_infinite] shadow-[0_0_8px_rgba(156,163,175,0.5)] 
+                dark:shadow-[0_0_8px_rgba(156,163,175,0.3)]" />
     </span>
   );
 } 

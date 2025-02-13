@@ -31,7 +31,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-8">
+    <section className="container mx-auto px-4 py-8 fade-in-section">
       <h2 className="text-2xl font-bold mb-6">Experience</h2>
       <div className="space-y-8">
         {experiences.map((exp, index) => (
