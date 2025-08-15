@@ -12,8 +12,8 @@ export default function HeaderSection() {
         </h1>
         <h2 className="text-2xl text-gray-600 dark:text-gray-400 mt-2">
           <TypeWriter
-            text="Developer and Real Estate Investor"
-            delay={75}
+            text="Developer, Builder, Real Estate Investor"
+            delay={45}
           />
         </h2>
       </div>

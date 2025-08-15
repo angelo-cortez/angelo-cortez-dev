@@ -7,6 +7,14 @@ import Image from 'next/image';
 const ProjectsSection = () => {
     const projects = [
         {
+            title: "Nippon Homes",
+            description: "Zillow for Japan. A distributed listing scraper hosted on a Hetzner VM, this project aggregates real estate listings from various sources, deduplicates them, and does LLM translations to serve them to the western audience.",
+            technologies: ["Supabase", "PostgreSQL", "Vercel", "AWS S3", "AWS API Gateway", "Next.js", "Scrapy", "React"],
+            bgColor: "bg-emerald-50 dark:bg-emerald-900/20",
+            link: "https://nipponhomes.com",
+            image: "/nipponhomes.png"
+        },
+        {
             title: "Notarix - EthGlobal Hackathon Winner",
             description: "A secure, real-world, ID-verified notarization platform built during the 2024 EthGlobal Hackathon San Francisco. Won the Build with USDC/EURC award ($1,500). The platform streamlines digital notarization while maintaining strong user privacy and security.",
             technologies: ["Next.js", "Shadcn UI", "Sign Protocol", "Polygon", "Synaps", "Privado ID", "React"],
